@@ -2,10 +2,41 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>datalist</title>
+    <style type="text/css">
+      .center {
+          margin: auto;
+          width: 50%;
+      }
+      h1.center {
+          text-align: center;
+      }
+      p.center {
+          text-align: center;
+      }
+      img.center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      body {
+          background-color: rgb(39, 23, 65);
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+
+      .white-background {
+          background-color: white;
+          height: 100vh;
+          padding-left: 30px;
+          padding-right: 30px;
+      }
+  </style>
   </head>
   <body>
-
+<div class="center , white-background">
     <h1>datalist</h1>
 
     <p>O Formulário "Datalist" mostra uma aba de opções pré-definidas do Formulário "Input"</p>
@@ -19,7 +50,7 @@
         <input list="Site">
       </label>
       <datalist id="Site">
-      <option value="Twitch">
+      <option id="" value="Twitch">
       <option value="Youtube">
       <option value="Instagram">
       <option value="Twitter">
@@ -28,5 +59,6 @@
       </datalist><br/>
       <input type="submit" name="Enviar">  
     </form>
+  </div>
   </body>
 </html>
