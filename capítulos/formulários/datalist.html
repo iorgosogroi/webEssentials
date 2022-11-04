@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>datalist</title>
     <style type="text/css">
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+      }
       .center {
           margin: auto;
           width: 50%;
@@ -37,7 +40,7 @@
   </head>
   <body>
 <div class="center , white-background">
-    <h1>datalist</h1>
+    <h1>Datalist</h1>
 
     <p>O Formulário "Datalist" mostra uma aba de opções pré-definidas do Formulário "Input"</p>
     <p>Usuários quando clicarem na caixa verão uma lista de opções pré-definidas quando foram botar os dados</p>
@@ -47,18 +50,30 @@
     <form>
       <label for="Site">Qual seu site favorito?</label>
       <label>
-        <input list="Site">
+        <input class="issoaqui" list="Site">
       </label>
       <datalist id="Site">
-      <option id="" value="Twitch">
+      <option value="Twitch">
       <option value="Youtube">
       <option value="Instagram">
       <option value="Twitter">
       <option value="Discord">
       <option value="Facebook">
       </datalist><br/>
-      <input type="submit" name="Enviar">  
+      <input id="sitir" type="submit" name="Enviar">  
     </form>
   </div>
   </body>
+  <script>
+      function sitir(){
+        let site = document.getElementsByTagName("option");
+
+        if(site === 'Twitch' ){
+          
+        }
+
+
+
+    }
+  </script>
 </html>
